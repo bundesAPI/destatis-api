@@ -1,0 +1,2625 @@
+swagger: '2.0'
+info:
+  version: '1.0'
+  title: Destatis-API
+host: www-genesis.destatis.de
+basePath: /genesisWS/rest/2020/
+schemes:
+  - https
+paths:
+  /catalogue/cubes:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: cubes
+  /catalogue/cubes2statistic:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: cubes2statistic
+  /catalogue/cubes2variable:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: cubes2variable
+  /catalogue/jobs:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: Code
+          in: query
+          name: searchcriterion
+          required: false
+          type: string
+        - default: Name
+          in: query
+          name: sortcriterion
+          required: false
+          type: string
+        - default: Alle
+          in: query
+          name: type
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: jobs
+  /catalogue/modifieddata:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: Alle
+          in: query
+          name: type
+          required: false
+          type: string
+        - default: 01.01.1970 01:00
+          in: query
+          name: date
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: modifieddata
+  /catalogue/qualitysigns:
+    parameters: []
+    get:
+      parameters:
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: qualitysigns
+  /catalogue/results:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: results
+  /catalogue/statistics:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: Code
+          in: query
+          name: searchcriterion
+          required: false
+          type: string
+        - default: Name
+          in: query
+          name: sortcriterion
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: statistics
+  /catalogue/statistics2variable:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: Code
+          in: query
+          name: searchcriterion
+          required: false
+          type: string
+        - default: Name
+          in: query
+          name: sortcriterion
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: statistics2variable
+  /catalogue/tables:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: Code
+          in: query
+          name: searchcriterion
+          required: false
+          type: string
+        - default: Code
+          in: query
+          name: sortcriterion
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: tables
+  /catalogue/tables2statistic:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: tables2statistic
+  /catalogue/tables2variable:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: tables2variable
+  /catalogue/terms:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: terms
+  /catalogue/timeseries:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: timeseries
+  /catalogue/timeseries2statistic:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: timeseries2statistic
+  /catalogue/timeseries2variable:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: timeseries2variable
+  /catalogue/values:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: Code
+          in: query
+          name: searchcriterion
+          required: false
+          type: string
+        - default: Name
+          in: query
+          name: sortcriterion
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: values
+  /catalogue/values2variable:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: Code
+          in: query
+          name: searchcriterion
+          required: false
+          type: string
+        - default: Name
+          in: query
+          name: sortcriterion
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: values2variable
+  /catalogue/variables:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: Code
+          in: query
+          name: searchcriterion
+          required: false
+          type: string
+        - default: Name
+          in: query
+          name: sortcriterion
+          required: false
+          type: string
+        - default: Alle
+          in: query
+          name: type
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: variables
+  /catalogue/variables2statistic:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: selection
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: Code
+          in: query
+          name: searchcriterion
+          required: false
+          type: string
+        - default: Name
+          in: query
+          name: sortcriterion
+          required: false
+          type: string
+        - default: Alle
+          in: query
+          name: type
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: variables2statistic
+  /data/chart2result:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: '0'
+          in: query
+          name: charttype
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: drawpoints
+          required: false
+          type: string
+        - default: '2'
+          in: query
+          name: zoom
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: focus
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: tops
+          required: false
+          type: string
+        - default: png
+          in: query
+          name: format
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: chart2result
+  /data/chart2table:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: '0'
+          in: query
+          name: charttype
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: drawpoints
+          required: false
+          type: string
+        - default: '2'
+          in: query
+          name: zoom
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: focus
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: tops
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: startyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: endyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: timeslices
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalvariable
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalkey
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable3
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey3
+          required: false
+          type: string
+        - default: png
+          in: query
+          name: format
+          required: false
+          type: string
+        - default: 01.01.1970 01:00
+          in: query
+          name: stand
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: chart2table
+  /data/chart2timeseries:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: '0'
+          in: query
+          name: charttype
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: drawpoints
+          required: false
+          type: string
+        - default: '2'
+          in: query
+          name: zoom
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: focus
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: tops
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: contents
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: startyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: endyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: timeslices
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalvariable
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalkey
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable3
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey3
+          required: false
+          type: string
+        - default: png
+          in: query
+          name: format
+          required: false
+          type: string
+        - default: 01.01.1970 01:00
+          in: query
+          name: stand
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: chart2timeseries
+  /data/cube:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: 'true'
+          in: query
+          name: values
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: metadata
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: additionals
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: contents
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: startyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: endyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: timeslices
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalvariable
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalkey
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable3
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey3
+          required: false
+          type: string
+        - default: csv
+          in: query
+          name: format
+          required: false
+          type: string
+        - default: 01.01.1970 01:00
+          in: query
+          name: stand
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: cube
+  /data/cubefile:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: 'true'
+          in: query
+          name: values
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: metadata
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: additionals
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: contents
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: startyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: endyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: timeslices
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalvariable
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalkey
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable3
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey3
+          required: false
+          type: string
+        - default: csv
+          in: query
+          name: format
+          required: false
+          type: string
+        - default: 01.01.1970 01:00
+          in: query
+          name: stand
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: cubefile
+  /data/map2result:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: '0'
+          in: query
+          name: maptype
+          required: false
+          type: string
+        - default: '5'
+          in: query
+          name: classes
+          required: false
+          type: string
+        - default: '0'
+          in: query
+          name: classification
+          required: false
+          type: string
+        - default: '2'
+          in: query
+          name: zoom
+          required: false
+          type: string
+        - default: png
+          in: query
+          name: format
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: map2result
+  /data/map2table:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: '0'
+          in: query
+          name: maptype
+          required: false
+          type: string
+        - default: '5'
+          in: query
+          name: classes
+          required: false
+          type: string
+        - default: '0'
+          in: query
+          name: classification
+          required: false
+          type: string
+        - default: '2'
+          in: query
+          name: zoom
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: startyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: endyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: timeslices
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalvariable
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalkey
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable3
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey3
+          required: false
+          type: string
+        - default: png
+          in: query
+          name: format
+          required: false
+          type: string
+        - default: 01.01.1970 01:00
+          in: query
+          name: stand
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: map2table
+  /data/map2timeseries:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: '0'
+          in: query
+          name: maptype
+          required: false
+          type: string
+        - default: '5'
+          in: query
+          name: classes
+          required: false
+          type: string
+        - default: '0'
+          in: query
+          name: classification
+          required: false
+          type: string
+        - default: '2'
+          in: query
+          name: zoom
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: contents
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: startyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: endyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: timeslices
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalvariable
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalkey
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable3
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey3
+          required: false
+          type: string
+        - default: png
+          in: query
+          name: format
+          required: false
+          type: string
+        - default: 01.01.1970 01:00
+          in: query
+          name: stand
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: map2timeseries
+  /data/result:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: compress
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: result
+  /data/resultfile:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: compress
+          required: false
+          type: string
+        - default: csv
+          in: query
+          name: format
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: resultfile
+  /data/table:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: compress
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: transpose
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: startyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: endyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: timeslices
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalvariable
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalkey
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable3
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey3
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: job
+          required: false
+          type: string
+        - default: 01.01.1970 01:00
+          in: query
+          name: stand
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: table
+  /data/tablefile:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: compress
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: transpose
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: startyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: endyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: timeslices
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalvariable
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalkey
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable3
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey3
+          required: false
+          type: string
+        - default: csv
+          in: query
+          name: format
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: job
+          required: false
+          type: string
+        - default: 01.01.1970 01:00
+          in: query
+          name: stand
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: tablefile
+  /data/timeseries:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: compress
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: transpose
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: contents
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: startyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: endyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: timeslices
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalvariable
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalkey
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalkeycode
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkeycode1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkeycode2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable3
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey3
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkeycode3
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: job
+          required: false
+          type: string
+        - default: 01.01.1970 01:00
+          in: query
+          name: stand
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: timeseriesData
+  /data/timeseriesfile:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: compress
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: transpose
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: contents
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: startyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: endyear
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: timeslices
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalvariable
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalkey
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: regionalkeycode
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkeycode1
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkeycode2
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingvariable3
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkey3
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: classifyingkeycode3
+          required: false
+          type: string
+        - default: csv
+          in: query
+          name: format
+          required: false
+          type: string
+        - default: 'false'
+          in: query
+          name: job
+          required: false
+          type: string
+        - default: 01.01.1970 01:00
+          in: query
+          name: stand
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: timeseriesfile
+  /find/find:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - in: query
+          name: term
+          required: false
+          type: string
+        - default: all
+          in: query
+          name: category
+          required: false
+          type: string
+        - default: '100'
+          in: query
+          name: pagelength
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: find
+  /helloworld/logincheck:
+    parameters: []
+    get:
+      parameters:
+        - in: query
+          name: username
+          required: false
+          type: string
+        - in: query
+          name: password
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: logincheck
+  /helloworld/whoami:
+    parameters: []
+    get:
+      parameters:
+        - in: header
+          name: user-agent
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: whoami
+  /metadata/cube:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: cubeMeta
+  /metadata/statistic:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: statistic
+  /metadata/table:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: tableMeta
+  /metadata/timeseries:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: timeseriesMeta
+  /metadata/value:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: value
+  /metadata/variable:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - default: ''
+          in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: variable
+  /profile/password:
+    parameters: []
+    get:
+      parameters:
+        - in: query
+          name: username
+          required: false
+          type: string
+        - in: query
+          name: password
+          required: false
+          type: string
+        - in: query
+          name: new
+          required: false
+          type: string
+        - in: query
+          name: repeat
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: password
+  /profile/removeResult:
+    parameters: []
+    get:
+      parameters:
+        - default: GAST
+          in: query
+          name: username
+          required: false
+          type: string
+        - default: GAST
+          in: query
+          name: password
+          required: false
+          type: string
+        - in: query
+          name: name
+          required: false
+          type: string
+        - default: free
+          in: query
+          name: area
+          required: false
+          type: string
+        - default: de
+          in: query
+          name: language
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Successful Response
+      operationId: removeResult
