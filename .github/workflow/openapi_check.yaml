@@ -5,7 +5,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-        - uses: actions/checkout@v2
+        - uses: actions/checkout@v3
 
         # Create default .spectral.yaml file used for linting if its not existing already
         - name: "Create spectral file if it not exists"

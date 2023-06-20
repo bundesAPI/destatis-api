@@ -8,7 +8,7 @@ jobs:
       matrix:
         python-version: ['3.7.8' ]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       # Create default .spectral.yaml file used for linting if its not existing already
       - name: "Create spectral file if it not exists"
